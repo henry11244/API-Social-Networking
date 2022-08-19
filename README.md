@@ -67,7 +67,7 @@ npm start
 
 See below for demonstration of the application
 
-![Watch the video](img/api.png)](https://drive.google.com/file/d/1pRx1DLjKL2iRiSLSGYwMjeF4r4qCgkDR/view?usp=sharing)
+[![Watch the video](img/api.png)](https://drive.google.com/file/d/1pRx1DLjKL2iRiSLSGYwMjeF4r4qCgkDR/view?usp=sharing)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
