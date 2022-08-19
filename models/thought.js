@@ -16,9 +16,11 @@ const thoughtSchema = new Schema(
             default: Date.now(),
         },
         username: {
-            type: String,
+            type: Schema.Types.String,
             required: true,
+            ref: 'Users'
         },
+
         reactions: [reactionSchema]
 
     },
@@ -30,6 +32,9 @@ const thoughtSchema = new Schema(
     }
 );
 
-const Thought = model('thought', thoughtSchema);
+const Thought = model('Thought', thoughtSchema);
+
+
+
 
 module.exports = Thought;

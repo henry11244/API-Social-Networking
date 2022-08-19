@@ -1,6 +1,6 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
-const { getRandomName, getRandomAssignments } = require('./data');
+const { getRandomName, getRandomReaction } = require('./data');
 
 connection.on('error', (err) => err);
 
@@ -16,7 +16,6 @@ connection.once('open', async () => {
     // Create empty array to hold the students
     const users = [];
 
-    // Get some random assignment objects using a helper function that we imported from ./data
 
 
     // Loop 20 times -- add students to the students array
@@ -27,8 +26,11 @@ connection.once('open', async () => {
         users.push({
             username,
             email,
+
         });
     }
+
+    const reaction = getRandomReaction(2, users);
 
     // Add students to the collection and await the results
     await User.collection.insertMany(users);
@@ -40,18 +42,22 @@ connection.once('open', async () => {
         {
             thoughtText: 'Random thought test 1',
             username: users[0].username,
+            reactions: reaction
         },
         {
             thoughtText: 'Random thought test 2',
             username: users[1].username,
+            reactions: reaction
         },
         {
             thoughtText: 'Random thought test 3',
             username: users[2].username,
+            reactions: reaction
         },
         {
             thoughtText: 'Random thought test 4',
             username: users[3].username,
+            reactions: reaction
         },
 
     ]);

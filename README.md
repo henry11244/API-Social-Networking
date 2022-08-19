@@ -65,6 +65,9 @@ npm start
 ```
 - Once you have initiated the applicaiton, your MongoDB-based database will be active on your local server which can then be updated using API post, put or delete routes. 
 
+See below for demonstration of the application
+
+![Watch the video](img/api.png)](https://drive.google.com/file/d/1pRx1DLjKL2iRiSLSGYwMjeF4r4qCgkDR/view?usp=sharing)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
